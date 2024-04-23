@@ -101,12 +101,14 @@ function displayFiveDayForecast(forecastData) {
             var forecastDate = dayjs(forecastData.list[i].dt_txt).format('MM/DD/YYYY');
             var forecastTemp = forecastData.list[i].main.temp;
             var forecastHumidity = forecastData.list[i].main.humidity;
+            var forecastWindSpeed = forecastData.list[i].wind.speed;
 
             var forecastDateEl = $('<h6>').addClass('card-title').text(forecastDate);
             var forecastTempEl = $('<p>').addClass('card-text').text('Temp: ' + forecastTemp + '°F');
             var forecastHumidityEl = $('<p>').addClass('card-text').text('Humidity: ' + forecastHumidity + '%');
+            var forecastWindSpeedEl = $('<p>').addClass('card-text').text('Wind Speed: ' + forecastWindSpeed + ' mph');
 
-            forecastCard.append(forecastDateEl, forecastTempEl, forecastHumidityEl);
+            forecastCard.append(forecastDateEl, forecastTempEl, forecastHumidityEl, forecastWindSpeedEl);
             fiveDaysForecast.append(forecastCard);
         }
     }
