@@ -1,0 +1,60 @@
+body {
+    font-family: 'Prata', serif;
+}
+
+.bg-primary {
+    background-color: #0288d1 !important;
+}
+
+.bg-info {
+    background-color: #00bcd4 !important;
+}
+
+.border {
+    border: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.pt-3,
+.py-3 {
+    padding-top: 1rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.px-3 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.city-info {
+    border-color: #ddd;
+    border-width: 1px;
+}
+
+.forecast-card {
+    background-color: #0296c1;
+    border-color: #027aa9;
+}
